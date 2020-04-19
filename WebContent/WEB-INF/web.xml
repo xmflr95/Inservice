@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>InService</display-name>
+  <servlet>
+    <servlet-name>listServlet</servlet-name>
+    <servlet-class>board.List</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>listServlet</servlet-name>
+    <url-pattern>/board/list</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>contentServlet</servlet-name>
+    <servlet-class>board.Content</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>contentServlet</servlet-name>
+    <url-pattern>/board/content</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>keywordSettingServlet</servlet-name>
+    <servlet-class>board.KeywordSetting</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>keywordSettingServlet</servlet-name>
+    <url-pattern>/board/keywordSetting</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>keywordSaveServlet</servlet-name>
+    <servlet-class>board.KeywordSave</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>keywordSaveServlet</servlet-name>
+    <url-pattern>/board/keywordSave</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>keywordDeleteServlet</servlet-name>
+    <servlet-class>board.KeywordDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>keywordDeleteServlet</servlet-name>
+    <url-pattern>/board/keywordDelete</url-pattern>
+  </servlet-mapping>
+</web-app>
